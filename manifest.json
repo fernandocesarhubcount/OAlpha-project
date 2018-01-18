@@ -13,15 +13,13 @@
     "activeTab"
   ],
   "browser_action":{
-    "default_popup": "popup.html"
+    "default_popup": "html/popup.html"
   },
   "content_scripts":[
     {
-      "matches":[
-        "*://*.google.com.br/*"
-      ],
+      "matches":["<all_urls>"],
       "js":[
-        "js/index.js"
+         "js/index.js"
       ],
       "run_at": "document_end",
       "persistent": false
