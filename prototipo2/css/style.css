@@ -1,0 +1,90 @@
+/*---------------------------------------------------------------------------*/
+/*-------------------------------Menu----------------------------------------*/
+/*---------------------------------------------------------------------------*/
+#menu-toggle {
+    display: inline-block;
+    cursor: pointer;
+}
+.container {
+  display: none;
+  cursor: pointer;
+}
+
+/*---------------------------------------------------------------------------*/
+/*--------------------------Lista do Menu------------------------------------*/
+/*---------------------------------------------------------------------------*/
+.container{
+  padding: 10px;
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.active{
+  display: block;
+}
+/*---------------------------------------------------------------------------*/
+/*------------------------------Corpo----------------------------------------*/
+/*---------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+body{
+  width: 350px;
+  height: 550px;
+  max-height: 550px;
+  margin: 0px;
+  padding: 3px;
+  background-color: #00bfb7;
+  font-family: 'Exo 2';
+}
+
+.box{
+  width: 100%;
+  box-sizing: border-box;
+}
+.title{
+  color: white;
+  box-shadow: #000 5px 0px 0px;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 9px 19px;
+  z-index: 10;
+  position: fixed;
+  background-color: #00bfb7;
+}
+.title--text,.title--config{
+  float: left;
+  width: 50%;
+}
+
+.title--config{
+  text-align: right;
+}
+.title--config svg{
+  cursor: pointer;
+  margin-left: 10px;
+}
+.list{
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+}
