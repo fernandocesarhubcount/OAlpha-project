@@ -1,6 +1,6 @@
 // Main code
-$ = document.querySelectorAll(this)[0];
+var faBars = document.querySelectorAll('#openMenu')[0];
 
-$('#menu .fa-filter').addEventListener('click',function(){
-   alert();
+faBars.addEventListener('click',function(){
+   alert('teste');
 });

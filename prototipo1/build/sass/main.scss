@@ -1,0 +1,17 @@
+@import 'fonts/exo2font.scss';
+
+body{
+   width: 350px;
+   height: 550px;
+   max-width: 350px;
+   max-height: 550px;
+   margin: 0px;
+   padding: 1px;
+   background-color: #00bfb7;
+   font-family: 'Exo 2';
+}
+
+.box{
+   width: 100%;
+   box-sizing: border-box;
+}
