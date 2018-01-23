@@ -11,39 +11,31 @@ module.exports = function(grunt) {
         }]
       }
     },
+    copy:{
+      files:[
+        {expand: true, src: ['build/images/*'], dest: 'app/images/'}]
+    },
     uglify:{
       my_target: {
         files: {
-          'app/index.js': ['build/js/*.js']
+          'app/index.js': ['build/js/libs/*.js','build/js/*.js']
         }
       }
     },
-    move:{
-      move_without_rename:{
-        src: 'build/images/',
-        app: 'app/images/'
-      },
-      move_without_rename:{
-        src: 'build/html/',
-        app: 'app/html/'
-      }
-      move_without_rename:{
-        src: 'build/manifest.json/',
-        app: 'app/manifest.json/'
-      }
-    },
     watch: {
-      files: ['<%= jshint.files %>','<%= sass.files =%>'],
+      files: ['build/js/*.js','build/sass/*.scss'],
       tasks: ['jshint','sass']
     }
   });
-  
+
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-move');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('build', ['jshint','sass','uglify','move','watch']);
+  grunt.registerTask('build-test', ['jshint','sass','copy','watch']);
+
+  grunt.registerTask('build-prod', ['sass','uglify']);
 
 };
