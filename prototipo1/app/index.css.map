@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AACA,KAAK;EACF,QAAQ,EAAE,QAAQ;EAClB,gBAAgB,EAAE,KAAK;EACvB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,WAAW,EAAE,IAAI",
-"sources": ["../build/sass/list.scss"],
-"names": [],
-"file": "index.css"
-}

@@ -19,7 +19,7 @@
     "128":"images/build-ico.png"
   },
   "browser_action":{
-    "default_popup": "html/popup.html"
+    "default_popup": "popup.html"
   },
   "content_scripts":[
     {
