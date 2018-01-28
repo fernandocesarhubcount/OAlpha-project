@@ -13,9 +13,9 @@
     "activeTab"
   ],
   "icons": {
-    "16":"images/build-ico.png",
-    "32":"images/build-ico.png",
-    "64":"images/build-ico.png",
+    "16":"images/build-ico-16.png",
+    "32":"images/build-ico-32.png",
+    "64":"images/build-ico-48.png",
     "128":"images/build-ico.png"
   },
   "browser_action":{

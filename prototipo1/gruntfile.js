@@ -59,7 +59,8 @@ module.exports = function(grunt) {
         'build/js/**/*.js',
         'build/sass/**/*.scss',
         'build/images/*.{png,jpg,gif}',
-        'build/html/*.html'
+        'build/html/*.html',
+        'build/manifest.json'
        ],
       tasks: ['jshint','sass','concat','copy']
     }
