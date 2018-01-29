@@ -1,0 +1,24 @@
+.title{
+   color: white;
+   box-shadow: #000 5px 0px 0px;
+   font-weight: bold;
+   font-size: 20px;
+   padding: 9px 19px;
+   z-index: 10;
+   position: fixed;
+   background-color: #00bfb7;
+
+   &--text,&--config{
+     float: left;
+     width: 50%;
+   }
+
+   &--config{
+     text-align: right;
+   }
+
+   &--config svg{
+     cursor: pointer;
+     margin-left: 10px;
+   }
+}
