@@ -25,6 +25,13 @@ module.exports = function(grunt) {
         src: 'manifest.json',
         dest: 'betha/',
         filter:'isFile'
+      },
+      fonts:{
+        expand: true,
+        cwd:'build/sass/fonts/',
+        src: '*.{woff2,ttf,woff,eot}',
+        dest: 'betha/css/fonts/',
+        filter:'isFile'
       }
     },
     concat:{
